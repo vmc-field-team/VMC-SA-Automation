@@ -1,0 +1,53 @@
+[
+    {
+        "OrgName": "VMC-WS1",
+        "OrgId": "<org-id>",
+        "RefreshToken": "<refresh token>",
+        "sddcConfig": [
+            {
+                "SDDCName": "Student1",
+                "Provider": "AWS",
+                "CIDR": "10.101.0.0/20",
+                "NetworkSegment": "192.168.101.0/24",
+                "NetworkGateway": "10.10.101.1/24",
+                "DHCPRange": "10.10.101.100-10.10.101.200",
+                "NumHosts": 1,
+                "Region": "US_WEST_2"
+            },
+            {
+                "SDDCName": "Student2",
+                "Provider": "AWS",
+                "CIDR": "10.102.0.0/20",
+                "NetworkSegment": "192.168.102.0/24",
+                "NetworkGateway": "10.10.102.1/24",
+                "DHCPRange": "10.10.102.100-10.10.102.200",
+                "NumHosts": 1,
+                "Region": "US_WEST_2"
+            }
+        ],
+        "awsConfig": [
+            {
+                "stackName": "Student1",
+                "awsVPC1": "172.101.0.0/16",
+                "awsSubnet1": "172.101.0.0/20",
+                "awsSubnet2": "172.101.16.0/20",
+                "awsVPC2": "10.101.16.0/20",
+                "awsSubnet3": "10.101.16.0/24",
+                "awsSubnet4": "10.101.17.0/24"
+            },
+            {
+                "stackName": "Student2",
+                "awsVPC1": "172.102.0.0/16",
+                "awsSubnet1": "172.102.0.0/20",
+                "awsSubnet2": "172.102.16.0/20",
+                "awsVPC2": "10.102.16.0/20",
+                "awsSubnet3": "10.102.16.0/24",
+                "awsSubnet4": "10.102.17.0/24"
+            }
+        ],
+        "Users": [
+            "ced01@vmware-hol.com",
+            "ced02@vmware-hol.com"
+        ]
+    }
+]

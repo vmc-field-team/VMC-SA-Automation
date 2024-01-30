@@ -1,0 +1,1 @@
+docker run -i --entrypoint=/usr/bin/pwsh -w /tmp/scripts/skyler/Active-Directory -e VI_USERNAME=skyler@set.local -e VI_PASSWORD=0N$ -v /git/hank:/tmp/scripts mcr.microsoft.com/powershell:centos-7 add-ad-user.ps1 $handle $name

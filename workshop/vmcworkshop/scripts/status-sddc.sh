@@ -1,0 +1,1 @@
+docker run -i -w /tmp/scripts/skyler/vmcworkshop -v $HOME/.aws/credentials:/root/.aws/credentials:ro -v $HOME/.aws/config:/root/.aws/config -v /git/hank:/tmp/scripts vmcworkshop:latest python3 manageWorkshop.py --profile $1 --region $2 --cmd status-sddc --org $3

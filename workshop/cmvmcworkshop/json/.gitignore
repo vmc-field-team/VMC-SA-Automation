@@ -1,0 +1,4 @@
+*.zip
+*.json
+Student*
+!workshop_example.json
